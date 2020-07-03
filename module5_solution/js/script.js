@@ -357,4 +357,3 @@ function insertItemPortionName(html,
 global.$dc = dc;
 
 })(window);
-short_nameram
