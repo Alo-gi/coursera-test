@@ -124,7 +124,7 @@ function buildAndShowHomeHTML (categories) {
       // var homeHtmlToInsertIntoMainPage = ....
         
            insertProperty = function (string, propName, propValue) {
-            var propToReplace  = "{{" + randomCategoryShortName + "}}";
+            var propToReplace  = "{{" + short_name + "}}";
             string = string
             .replace(new RegExp(propToReplace, "g"), propValue);
               return string;
