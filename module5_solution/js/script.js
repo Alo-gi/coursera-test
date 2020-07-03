@@ -120,15 +120,17 @@ function buildAndShowHomeHTML (categories) {
       // $dc.loadMenuItems('L')
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
-      var homeHtmlToInsertIntoMainPage = 
+      
       // var homeHtmlToInsertIntoMainPage = ....
         
-           insertProperty = function (string, propName, propValue) {
+           var insertProperty = function (string, randomCategoryShortName, chosenCategoryShortName) {
             var propToReplace  = "{{" + randomCategoryShortName + "}}";
             string = string
-            .replace(new RegExp(propToReplace, "g"), propValue);
+            .replace(new RegExp(propToReplace, "g"), chosenCategoryShortName);
               return string;
           };
+
+          var homeHtmlToInsertIntoMainPage = chosenCategoryShortName;
           
 
 
