@@ -130,8 +130,12 @@ function buildAndShowHomeHTML (categories) {
               return string;
           };
 
-          var homeHtmlToInsertIntoMainPage = chosenCategoryShortName;
-          
+          var homeHtmlToInsertIntoMainPage = 
+          chosenCategoryShortName(categories,
+                                    categoriesTitleHtml,
+                                    categoryHtml);
+         
+            
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -359,5 +363,3 @@ function insertItemPortionName(html,
 global.$dc = dc;
 
 })(window);
-
-                                   
