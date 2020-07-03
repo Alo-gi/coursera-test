@@ -124,7 +124,7 @@ function buildAndShowHomeHTML (categories) {
       // var homeHtmlToInsertIntoMainPage = ....
         
            insertProperty = function (string, propName, propValue) {
-            var propToReplace  = "{{" + short_name + "}}";
+            var propToReplace  = "{{" + randomCategoryShortName + "}}";
             string = string
             .replace(new RegExp(propToReplace, "g"), propValue);
               return string;
@@ -357,3 +357,4 @@ function insertItemPortionName(html,
 global.$dc = dc;
 
 })(window);
+short_nameram
